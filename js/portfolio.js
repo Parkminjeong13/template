@@ -124,7 +124,7 @@ $CateList.forEach((e,i)=>{
         const $attr = e.getAttribute("data-type")
         $CateList[i].classList.add("on")
         /* getAttribute 속성값 가져오기 */
-        axios.get("../data/data.json")
+        axios.get("data/data.json")
         .then(function(res){
             let PortData;
             if($attr === "전체"){
